@@ -1,0 +1,129 @@
+﻿<?
+/*include"doc-head-open.php";
+include"doc-head-close.php" ;
+include"intranet-nav.php" ;*/
+$step=$_POST["step"];
+    $form1="";
+    $form2="disabled";
+    $form3="disabled";
+if($step==1 ){
+    $form1="disabled";
+    $form2="";
+}
+elseif($step==2){
+    $form1="disabled";
+    $form2="disabled";
+    $form3="";
+  
+ }   
+elseif($step==3){
+    $form1="disabled";
+    $form2="disabled";
+    $form3="disabled";
+}
+
+
+?>
+<div id="main">
+<div id="menu">
+<h1>ระบบนำเข้าข้อมูลโครงการพัฒนาวิชาการที่ได้รับอนุมัติ</h1>
+<table>
+<tr>
+	<td>Step 1</td>
+</tr>
+<tr>
+    <td>
+        <?
+			if($step==2)
+                echo "<!--";
+        ?>        
+        <form name="form1" enctype="multipart/form-data" method="POST" > 
+        <table bgcolor='grey'>
+			<tr>
+				<td>อัพโหลดไฟล์สำหรับ Migration</td>
+			</tr>
+			<tr>
+				<td>
+                    <?
+					//$a="tmpsql.xls";//$_FILES["file"]["name"] ;
+					$a=$_FILES["file"]["name"] ;
+					if ($_FILES["file"]["error"] > 0) {
+						echo "Error: " . $_FILES["file"]["error"] . "<br />";
+					}else{
+						echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+                        echo "Type: " . $_FILES["file"]["type"] . "<br />";
+                        echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
+                        //echo "Stored in: " . $_FILES["file"]["tmp_name"];
+                        //echo "Stored in: " . $_FILES["file"][$a];
+                        copy($_FILES["file"]["tmp_name"],$a);
+                        //include"simplecsvimport.php";
+					}
+                    ?>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="hidden" name="step" value="1">
+                    <input type="file" name="file">
+                    <input type="Hidden" value="up" name="job">
+                    <input type="submit" value="Upload File(xls)"  <?=$form1?>>
+				</td>
+			</tr>
+		</table>        
+        </form>
+	</td>
+</tr>
+	<?
+    if($step==2)
+		echo "-->";
+	?>
+<tr>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>Step 2</td>
+</tr>
+
+<tr>    
+	<td>
+        <?
+            if($step==3)
+                echo "<!--";
+        ?>
+        <form name ="form2" method="POST">
+        <table bgcolor='blue'>
+			<tr>
+				<td>Migration File XLS to Project' s Database</td>
+			</tr>
+            <tr>
+				<td><input type="hidden" name="step" value="2"><input type="submit" value="Import"  <?=$form2?>></td>
+			</tr>
+			<tr>
+				<td>
+					<?
+						/*if($step==2){
+							//include"updatetype_u.php";
+							include"import.php";
+						}*/
+					?>
+				</td>
+			</tr>
+		</table>        
+		</form>
+    </td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="main">
+<div id="menu">
+<?
+	if($step==2){
+		include"import.php";
+	}
+?>
+</div>
+</div>

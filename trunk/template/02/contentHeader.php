@@ -1,4 +1,4 @@
-Release version 0.0.2<table class="noSpacing" 
+<table class="noSpacing" 
 	style="
 		width: 100%;
 		height: 100%;

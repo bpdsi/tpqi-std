@@ -22,7 +22,7 @@
 								color: #fff;
 							"
 						>
-							 Thailand Professional Qualification Institute (Public Organization).  
+							AAA Thailand Professional Qualification Institute (Public Organization).  
 						</div>
 					</div>
 				</td>

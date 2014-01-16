@@ -1,4 +1,4 @@
-999<table class="noSpacing" 
+Release version 0.0.2<table class="noSpacing" 
 	style="
 		width: 100%;
 		height: 100%;

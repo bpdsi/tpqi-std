@@ -22,7 +22,7 @@
 								color: #fff;
 							"
 						>
-							55555555555  Thailand Professional Qualification Institute (Public Organization).  
+							Thailand Professional Qualification Institute (Public Organization).  
 						</div>
 					</div>
 				</td>

@@ -8,10 +8,10 @@
 	$template=$currentTheme[cfgValue];
 	$page=$_GET[page];
 	
-	if(!authenticated()){
+	/*if(!authenticated()){
 		header("location:authen/index.php");
 		exit();
-	}
+	}*/
 	if($page==""){
 		$page="home/index.php";
 	}

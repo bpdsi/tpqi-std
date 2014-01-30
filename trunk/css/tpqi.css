@@ -108,10 +108,6 @@ td.table_footer:last-child{
 	border-bottom-right-radius: 5px;
 }
 
-table.table_01 th:first-child{
-	border-top-left-radius: 5px;
-}
-
 table.table_01 th{
 	background-color: #6e0505;
 	color: #fff;
@@ -120,8 +116,20 @@ table.table_01 th{
 	padding-right: 10px;
 }
 
-table.table_01 th:last-child{
+table.table_01 tr:first-child th:first-child{
+	border-top-left-radius: 5px;
+}
+
+table.table_01 tr:first-child th:last-child{
 	border-top-right-radius: 5px;
+}
+
+table.table_01 tr:last-child th:first-child{
+	border-bottom-left-radius: 5px;
+}
+
+table.table_01 tr:last-child th:last-child{
+	border-bottom-right-radius: 5px;
 }
 
 .form_footer{

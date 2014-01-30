@@ -272,17 +272,23 @@
 										position: absolute;
 									"
 								>
-								<div 
-									style="
-										position: absolute;
-										right: 120px;
-										top: 44px;
-										text-align: right;
-									"
-								>
-									Welcome <b><?php echo $_SESSION[authen][name]." ".$_SESSION[authen][familyName]?></b><br>
-									<div style="font-weight: bold;font-size: 17px;"><?php echo perName($_SESSION[authen][perID])?><input type="button" value="ออกจากระบบ" onclick="window.open('authen/logout.php','_self')"></div>
-								</div>
+								<?php
+									if(authenticated()){
+										?>
+											<div 
+												style="
+													position: absolute;
+													right: 120px;
+													top: 44px;
+													text-align: right;
+												"
+											>
+												Welcome <b><?php echo $_SESSION[authen][name]." ".$_SESSION[authen][familyName]?></b><br>
+												<div style="font-weight: bold;font-size: 17px;"><?php echo perName($_SESSION[authen][perID])?><input type="button" value="ออกจากระบบ" onclick="window.open('authen/logout.php','_self')"></div>
+											</div>
+										<?php
+									} 
+								?>
 							</div>
 						</td>
 					</tr>

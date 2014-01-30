@@ -1,7 +1,5 @@
 <script type="text/javascript">
-<!--
 	$('document').ready(function(){
-		//$('.animate').css('height','25px');
 		$('.animate').mouseover(function(){
 			$(this).stop();
 			$(this).animate({height: 200,bottom: 0,margin: 0},'fast');
@@ -9,12 +7,12 @@
 			$(this).stop();
 			$(this).animate({height: 100,bottom: 0,margin: 0},'fast');
 		});
-	});
-//-->
-</script>
-<script type="text/javascript">
-	$(document).ready(function($){
 		slide=setTimeout('nextSlide()',5000);
+
+		$('#menu_cbRegist').click(function(){
+			window.open('?page=cb/cbRegist.php','_self')
+		});
+		
 	});
 	function nextSlide(){
 		var current=$('#current').val();
@@ -117,7 +115,7 @@
 		<td style="padding-right: 5px;width: 250px;vertical-align: top;">
 			<table class="table_01" style="width: 100%;">
 				<tr>
-					<td class="table_header table_topRadius">Professional Standard</td>
+					<td class="table_header table_topRadius">คุณวุฒิวิชาชีพ</td>
 				</tr>
 				<tr>
 					<td>
@@ -242,7 +240,9 @@
 														<td class="mouseOver pointer" style="padding-left: 5px;"><img src="images/systemIcon.png" style="margin-right: 5px;">สืบค้นองค์กรรับรอง</td>
 													</tr>
 													<tr>
-														<td class="mouseOver pointer" style="padding-left: 5px;"><img src="images/systemIcon.png" style="margin-right: 5px;">ลงทะเบียนขอรับการประเมิน เป็นองค์กรรับรอง</td>
+														<td class="mouseOver pointer" style="padding-left: 5px;" id="menu_cbRegist">
+															<img src="images/systemIcon.png" style="margin-right: 5px;">ลงทะเบียนขอรับการประเมิน เป็นองค์กรรับรอง
+														</td>
 													</tr>
 													<tr>
 														<td class="mouseOver pointer" style="padding-left: 5px;"><img src="images/systemIcon.png" style="margin-right: 5px;">ระบบประเมินตนเอง</td>

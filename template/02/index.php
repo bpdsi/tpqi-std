@@ -209,7 +209,7 @@
 		border-top-left-radius: 5px !important;
 		border-top-right-radius: 5px !important;
 	}
-	.table_01, .table_footer, .subMenu{
+	.table_01, .subMenu{
 		border-bottom-left-radius: 5px !important;
 		border-bottom-right-radius: 5px !important;
 	}

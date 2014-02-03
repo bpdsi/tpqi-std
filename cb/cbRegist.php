@@ -123,10 +123,10 @@
 								>
 									<table id="tab01" class="tabet_content" style="margin-left: auto;margin-right: auto;width: 750px;">
 										<tr>
-											<td><div style="float: left;margin-right: 5px;">ชื่อองค์กรที่ยื่นคำขอ</div> <input type="text" style="width: 600px;float: right"></td>
+											<td><div style="float: left;margin-right: 5px;">ชื่อองค์กรที่ยื่นคำขอ</div> <input type="text" style="width: 600px;float: right" id="orgName" name="orgName"></td>
 										</tr>
 										<tr>
-											<td><div style="float: left;margin-right: 5px;">หมายเลขทะเบียนนิติบุคคล</div> <input type="text" style="width: 560px;float: right"></td>
+											<td><div style="float: left;margin-right: 5px;">หมายเลขทะเบียนนิติบุคคล</div> <input type="text" style="width: 560px;float: right" id="corporationID" name="corporationID"></td>
 										</tr>
 										<tr>
 											<td style="font-weight: bold">ที่ตั้งสำนักงานใหญ่</td>
@@ -134,32 +134,32 @@
 										<tr>
 											<td>
 												<div style="float: left;margin-right: 5px;">
-													เลขที่ <input type="text" style="width: 80px;margin-right: 10px;">
-													หมู่ที่ <input type="text" style="width: 80px;margin-right: 10px;">
+													เลขที่ <input type="text" style="width: 80px;margin-right: 10px;" id="buildingNumber" name="buildingNumber">
+													หมู่ที่ <input type="text" style="width: 80px;margin-right: 10px;" id="townshipNumber" name="townshipNumber">
 													ตรอก/ซอย
 												</div>
-												<input type="text" style="width: 385px;float:right">
+												<input type="text" style="width: 385px;float:right" id="subLane" name="subLane">
 											</td>
 										</tr>
 										<tr>
 											<td>
 												<div style="float: left;margin-right: 5px;">
-													ถนน <input type="text" style="width: 109px;margin-right: 10px;">
-													ตำบล/แขวง <input type="text" style="width: 125px;margin-right: 10px;">
+													ถนน <input type="text" style="width: 109px;margin-right: 10px;" id="streetName" name="streetName">
+													ตำบล/แขวง <input type="text" style="width: 125px;margin-right: 10px;" id="subDistrict" name="subDistrict">
 													อำเภอ/เขต
 												</div>
-												<input type="text" style="width: 280px;float:right">
+												<input type="text" style="width: 280px;float:right" id="district" name="district">
 											</td>
 										</tr>
 										<tr>
 											<td>
 												<div style="float: left;margin-right: 5px;">
-													จังหวัด <input type="text" style="width: 109px;margin-right: 10px;">
-													รหัสไปีษณีย์ <input type="text" style="width: 84px;margin-right: 10px;">
-													โทรศัพท์ <input type="text" style="width: 130px;margin-right: 10px;">
+													จังหวัด <input type="text" style="width: 109px;margin-right: 10px;" id="province" name="province">
+													รหัสไปีษณีย์ <input type="text" style="width: 84px;margin-right: 10px;" id="postcode" name="postcode">
+													โทรศัพท์ <input type="text" style="width: 130px;margin-right: 10px;" id="telephone" name="telephone">
 													โทรสาร
 												</div>
-												<input type="text" style="width: 130px;float:right">
+												<input type="text" style="width: 130px;float:right" id="fax" name="fax">
 											</td>
 										</tr>
 										<tr>
